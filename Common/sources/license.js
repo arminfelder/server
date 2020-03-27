@@ -152,7 +152,8 @@ exports.packageType = oPackageType;
 
 function getLicenseMode(mode) {
 	const c_LM = constants.LICENSE_MODE;
-	return 'developer' === mode ? c_LM.Developer : ('trial' === mode ? c_LM.Trial : c_LM.None);
+	//return 'developer' === mode ? c_LM.Developer : ('trial' === mode ? c_LM.Trial : c_LM.None);
+	return c_LM.Developer;
 }
 
 function* _getFileState(res) {
